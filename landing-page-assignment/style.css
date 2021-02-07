@@ -1,0 +1,68 @@
+html {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7ff;
+    /* responsive */
+    width: 100%;
+    margin: auto;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+#container {
+    display: flex;
+    justify-content: center; 
+    align-content: center;
+    width: 80%;
+    height: 700px;
+    margin: auto;
+}
+
+.wallpaper img {
+    width: 80%;
+    height: auto;
+}
+
+.large-text {
+    font-size: 4rem;
+}
+
+.form-box {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #57eeab;
+    padding: 10px 5c;
+    
+}
+
+button p {
+    font-size: 1rem;
+}
+
+footer {
+    background-color: #fffd8c;
+    display: flex;
+}
+
+footer form {
+    display: flex;
+    flex-direction: row;
+}
+

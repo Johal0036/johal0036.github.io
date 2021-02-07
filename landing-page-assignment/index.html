@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Assignment</title>
-    <style src="style.css"></style>
+    <link rel="stylesheet" href="style.css"></link>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div id="logo">
+        <div class="logo">
             <img src="images/logo/logo.png" />
         </div>
     </header>
     <main id="container">
-        <img src="images/bg-image/scooter.svg" class="wallpaper" />
         <div class="invitation">
             <h1 class="large-text">
                 Want to be your own boss?
@@ -24,6 +23,9 @@
             <p class="regular-text">
                 Start today and make up to $30/hr driving your own vehicle with Dash!
             </p>
+        </div>
+        <div class="wallpaper" >
+            <img src="images/bg-image/scooter.svg" />
         </div>
         <div class="form">
             <div class="form-box">
@@ -34,12 +36,19 @@
                     Enter your info below to get started.
                 </p>
                 <form action="">
-                    <input type="text"></input>
-                    <input type="text"></input>
-                    <input type="text"></input>
-                    <input type="text"></input>
-                    <input type="checkbox"></input>
-                    <button>This is a button</button>
+                    <input type="text" placeholder="First name"></input>
+                    <input type="text" placeholder="Last name"></input>
+                    <input type="text" placeholder="Email address"></input>
+                    <input type="text" placeholder="Phone number"></input>
+                    <input type="checkbox">I agree with Dash terms.</input>
+                    <button> <p>
+                        DRIVE WITH US
+                    </p></button>
+                    <div>
+                        <p>
+                            Already applied? Check your application status here.
+                        </p>
+                    </div>
                 </form>
             </div>
         </div>
