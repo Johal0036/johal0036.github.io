@@ -11,6 +11,11 @@ body {
     margin: auto;
 }
 
+header {
+    width: 80%;
+    margin: auto;
+}
+
 .logo img {
     width: 100px;
     height: auto;
@@ -18,8 +23,9 @@ body {
 
 #container {
     display: flex;
+    flex-direction: row;
     justify-content: center; 
-    align-content: center;
+    align-items: center;
     width: 80%;
     height: 700px;
     margin: auto;
@@ -28,6 +34,7 @@ body {
 .wallpaper img {
     width: 80%;
     height: auto;
+    align-self: center;
 }
 
 .large-text {
@@ -49,20 +56,48 @@ form {
 button {
     background-color: #57eeab;
     padding: 10px 5c;
-    
+    border-radius: 20px;
 }
 
 button p {
     font-size: 1rem;
+    
 }
 
 footer {
+    width: 100%;
+    margin: auto;
     background-color: #fffd8c;
+}
+
+.footer-content {
+    
     display: flex;
+    width: 80%;
+    margin: auto;
+
 }
 
 footer form {
     display: flex;
     flex-direction: row;
+
 }
 
+/*** BREAKPOINT ***/
+
+@media (max-width: 800px) {
+    #container {
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+}
+
+@media (max-width: 600px) {
+    #container {
+        height: 1000px;
+    }
+}
