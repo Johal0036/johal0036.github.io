@@ -53,11 +53,18 @@ form {
     flex-direction: column;
 }
 
-button {
+.drive {
     background-color: #57eeab;
-    padding: 10px 5c;
+    padding: 2px 5px;
     border-radius: 20px;
 }
+
+.calculate {
+    background-color: #ff8480 ;
+    padding: 10px 5px;
+    border-radius: 20px;
+}
+
 
 button p {
     font-size: 1rem;
@@ -84,6 +91,24 @@ footer form {
 
 }
 
+.social {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center; 
+    align-content: center;
+    
+}
+
+.social img {
+    padding: 20px;
+}
+
+input {
+    margin: 10px 0px;
+}
+
 /*** BREAKPOINT ***/
 
 @media (max-width: 800px) {
@@ -93,11 +118,60 @@ footer form {
         flex-direction: column;
         flex-wrap: nowrap;
     }
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .social {
+        display: flex;
+        justify-content: space-around;
+    }
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     #container {
         height: 1200px;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .estimate form {
+        width: 100%;
+        margin: auto;
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .estimate input {
+        width: 100%;
+    }
+    .hours {
+        flex-grow: 1;
+        width: 20%;
+        margin: auto;
+    }
+
+    .city {
+        flex-grow: 4;
+        width: 80%;
+        margin: auto;
+    }
+    .calculate {
+        margin: auto;
+        width:100%;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-around;
+    }
+    .estimate form input {
+        margin: 10px 0px;
     }
 }
