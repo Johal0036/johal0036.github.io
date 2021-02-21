@@ -1,3 +1,151 @@
+/* Mobile version first */
+
 body {
-    background-color: gray;
+    background-color: #F2F2F2;
+    margin: auto;
+    width: 100%;
+}
+
+.header {
+    background-color: #3C3B3A;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 88px;
+    height: auto;
+    align-self: center;
+}
+
+.navigation {
+    align-self: center;
+    color: #fff;
+}
+
+/* will target all the sections on the html page */
+#section-container {
+    width: 100%;
+    margin: auto;
+}
+
+.content-container-01 {
+    width: 70%;
+    margin: auto;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 50% 50% */
+    grid-template-rows: 1fr 1fr;
+}
+
+.icons img {
+    align-self: center;
+}
+
+.intro-btn {
+    background-color: #26A682;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.girl-books img {
+    width: 300px; 
+    height: auto;
+}
+
+.graduation-photo img {
+    width: 100%;
+    height: auto;
+}
+
+.content-container-02 {
+    width: 80%;
+    margin:auto;
+}
+
+.section-btn {
+    background-color: #26A682;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.president-msg {
+    background-color: #3C3B3A;
+    width: 100%;
+    margin: auto;
+    color: #fff;
+}
+
+.president-content {
+    width: 80%;
+    margin: auto;
+}
+
+.president-photo {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.president-photo img {
+    width: 175px;
+    height: auto;
+    border-radius: 100%;
+    border: 5px solid white;
+}
+
+.president-name p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.girl-photo {
+    width: 100%;
+    margin:auto;
+
+}
+
+.girl-photo img {
+    width: 100%;
+}
+
+.entertainment-content {
+    width: 80%;
+    margin: auto;
+}
+
+footer {
+    background-color: #3C3B3A;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer-socialmedia {
+    display: flex;
+    justify-content: center;
+}
+.footer-socialmedia img {
+    padding: 15px;s
+}
+
+.footer-text p {
+    text-align: center;
+}
+
+.back-to-top {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
 }
