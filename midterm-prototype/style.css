@@ -1,4 +1,10 @@
-/* Mobile version first */
+/*** Mobile version first ***/
+
+/* styles for the home page */
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
 
 body {
     background-color: #F2F2F2;
@@ -71,7 +77,8 @@ body {
     margin:auto;
 }
 
-.section-btn {
+.section-btn,
+.btn {
     background-color: #26A682;
     padding: 10px 20px;
     border-radius: 10px;
@@ -148,4 +155,102 @@ footer {
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
+}
+
+/* styles for the about page */
+
+
+
+.construction-vector img {
+    width: 300px; 
+    height: auto; 
+}
+
+.banner-about,
+.banner-service {
+    width: 100%;
+    margin: auto;
+}
+
+.banner-about img,
+.banner-service img {
+    width: 100%;
+    height: auto;
+}
+
+#about-container {
+width: 80%;
+margin: auto;
+}
+
+.about-who h3,
+.about-what h3,
+.about-where h3 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.service-photo01 img,
+.service-photo02 img,
+.service-photo03 img,
+.service-photo04 img {
+display: none;
+}
+
+.middle-banner {
+    background-color:#3C3B3A;
+    color: white;
+width: 100%;
+margin: auto;
+}
+
+.middle-banner-content {
+    width: 50%;
+    margin: auto;
+}
+.middle-banner-content h1 {
+    font-size: 1.2rem;
+
+}
+
+.container-services-01,
+.container-services-02 {
+    width: 100%;
+    margin: auto;
+}
+
+.service-01,
+.service-02,
+.service-03,
+.service-04 {
+    width: 80%;
+    margin: auto;
+}
+
+.sponsors {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.sponsors-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sponsors-logo {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sponsors-logo img {
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
