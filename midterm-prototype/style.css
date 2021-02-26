@@ -29,6 +29,15 @@ body {
     color: #fff;
 }
 
+.navigation ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.navigation a {
+    align-items: center;
+}
+
 /* will target all the sections on the html page */
 #section-container {
     width: 100%;
@@ -113,6 +122,10 @@ body {
 .president-name p {
     font-weight: bold;
     text-align: center;
+}
+
+.backup-name {
+    display: none;
 }
 
 .girl-photo {
@@ -253,4 +266,220 @@ margin: auto;
     margin: auto;
     align-items: center;
     justify-content: center;
+}
+
+
+/* styes for the contact page*/
+
+.content-container-03 {
+    width: 80%;
+    margin:auto;
+}
+
+.contact-image img {
+width: 300px;
+margin: auto; 
+}
+
+.contact-form {
+    background-color: #26A682;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.contact-form fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+.submit {
+    background-color: #3C3B3A;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.submit a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+[type=textarea] {
+    height: 100px;
+}
+
+#address {
+    width: 100%; 
+    margin: auto;
+}
+
+.address-content {
+    width: 80%;
+    margin: auto;
+}
+
+.algonquin-map {
+    width: 100%;
+    margin:auto;
+}
+
+/* I tried doing this, but it didn't work.
+picture img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  } */
+
+/* breakpoint - tablet */
+
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    .navigation {
+        margin-right: 50px;
+    }
+
+    .navigation ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navigation ul li a {
+        display: inline-block;
+        padding: 15px;
+    }
+
+    .logo {
+        margin-left: 50px;
+        
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /* 25% 25% 25% 25% */
+        height: 130px;
+    }
+
+    .intro-btn {
+        background-color: #26A682;
+        padding: 10px;
+        width: 50%;
+        border-radius: 10px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .btn a {
+        font-weight: bold;
+    }
+
+    .girl-books {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        padding: 40px 0px;
+    }
+    
+    .girl-books img {
+        width: 350px; 
+        height: auto;
+    }
+
+    .section-photo {
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .graduation-photo img {
+        position: relative;
+        bottom: 200px;
+    }
+
+    .president-msg {
+        width: 100%;
+        margin: auto;
+    }
+
+    .president-content {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 80%;
+        margin: auto;                       
+    }
+    .president-name {
+        display: none;
+    }
+
+    .president-photo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .president-photo img {
+        
+        flex-grow: 4;
+    }
+
+    .backup-name {
+        display: inline-block;
+    }
+
+    .backup-name p {
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .president-quote {
+        margin: 20px;
+    }
+
+    
+
+    .girl-photo img {
+        position: relative;
+        bottom: 150px;
+    }
+
+    .section-btn {
+        background-color: #26A682;
+        height: 40px;
+        width: 20%;
+        padding: 10px 15px;
+        margin: 10px 0 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        
+    }
+    .section-btn a {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+
+   footer {
+       display: flex;
+       justify-content: center;
+   }
+}
+
+
+
+
+
+/* breakpoint - desktop */
+
+@media (min-width: 1024px) {
+
 }
