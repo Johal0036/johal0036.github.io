@@ -51,7 +51,8 @@ body {
 
 .icons {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 50% 50% */
+    grid-template-columns: 1fr 1fr;
+    /* 50% 50% */
     grid-template-rows: 1fr 1fr;
 }
 
@@ -72,7 +73,7 @@ body {
 }
 
 .girl-books img {
-    width: 300px; 
+    width: 300px;
     height: auto;
 }
 
@@ -83,7 +84,7 @@ body {
 
 .content-container-02 {
     width: 80%;
-    margin:auto;
+    margin: auto;
 }
 
 .section-btn,
@@ -130,7 +131,7 @@ body {
 
 .girl-photo {
     width: 100%;
-    margin:auto;
+    margin: auto;
 
 }
 
@@ -154,8 +155,10 @@ footer {
     display: flex;
     justify-content: center;
 }
+
 .footer-socialmedia img {
-    padding: 15px;s
+    padding: 15px;
+    s
 }
 
 .footer-text p {
@@ -175,8 +178,8 @@ footer {
 
 
 .construction-vector img {
-    width: 300px; 
-    height: auto; 
+    width: 100%;
+    height: auto;
 }
 
 .banner-about,
@@ -192,8 +195,8 @@ footer {
 }
 
 #about-container {
-width: 80%;
-margin: auto;
+    width: 80%;
+    margin: auto;
 }
 
 .about-who h3,
@@ -207,20 +210,21 @@ margin: auto;
 .service-photo02 img,
 .service-photo03 img,
 .service-photo04 img {
-display: none;
+    display: none;
 }
 
 .middle-banner {
-    background-color:#3C3B3A;
+    background-color: #3C3B3A;
     color: white;
-width: 100%;
-margin: auto;
+    width: 100%;
+    margin: auto;
 }
 
 .middle-banner-content {
     width: 50%;
     margin: auto;
 }
+
 .middle-banner-content h1 {
     font-size: 1.2rem;
 
@@ -250,6 +254,7 @@ margin: auto;
     width: 80%;
     margin: auto;
     display: flex;
+    text-align: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -259,11 +264,13 @@ margin: auto;
     margin: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .sponsors-logo img {
     width: 50%;
-    margin: auto;
+    margin: 20px auto;
     align-items: center;
     justify-content: center;
 }
@@ -273,12 +280,12 @@ margin: auto;
 
 .content-container-03 {
     width: 80%;
-    margin:auto;
+    margin: auto;
 }
 
 .contact-image img {
-width: 300px;
-margin: auto; 
+    width: 300px;
+    margin: auto;
 }
 
 .contact-form {
@@ -299,7 +306,7 @@ margin: auto;
     padding: 10px 20px;
     border-radius: 10px;
     text-align: center;
-    
+
 }
 
 .submit a {
@@ -307,12 +314,13 @@ margin: auto;
     text-decoration: none;
     font-weight: bold;
 }
+
 [type=textarea] {
     height: 100px;
 }
 
 #address {
-    width: 100%; 
+    width: 100%;
     margin: auto;
 }
 
@@ -323,7 +331,7 @@ margin: auto;
 
 .algonquin-map {
     width: 100%;
-    margin:auto;
+    margin: auto;
 }
 
 /* I tried doing this, but it didn't work.
@@ -339,7 +347,7 @@ picture img {
     .header {
         display: flex;
         flex-direction: row;
-        justify-content:space-between;
+        justify-content: space-between;
         align-items: center;
         margin: auto;
     }
@@ -360,12 +368,15 @@ picture img {
 
     .logo {
         margin-left: 50px;
-        
+
     }
+
+    /* HOME TABLET */
 
     .icons {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr; /* 25% 25% 25% 25% */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* 25% 25% 25% 25% */
         height: 130px;
     }
 
@@ -388,9 +399,9 @@ picture img {
         justify-content: center;
         padding: 40px 0px;
     }
-    
+
     .girl-books img {
-        width: 350px; 
+        width: 350px;
         height: auto;
     }
 
@@ -414,8 +425,9 @@ picture img {
         display: flex;
         flex-flow: row nowrap;
         width: 80%;
-        margin: auto;                       
+        margin: auto;
     }
+
     .president-name {
         display: none;
     }
@@ -426,7 +438,7 @@ picture img {
     }
 
     .president-photo img {
-        
+
         flex-grow: 4;
     }
 
@@ -443,8 +455,6 @@ picture img {
         margin: 20px;
     }
 
-    
-
     .girl-photo img {
         position: relative;
         bottom: 150px;
@@ -460,19 +470,170 @@ picture img {
         justify-content: center;
         align-items: center;
         border-radius: 20px;
-        
+
     }
+
     .section-btn a {
         text-align: center;
         font-weight: bold;
     }
-    
 
-   footer {
-       display: flex;
-       justify-content: center;
-   }
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ABOUT TABLET */
+
+    .construction-vector {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        padding: 40px 0px;
+    }
+
+    .banner-about,
+    .banner-service {
+        height: 200px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .banner-photo img {
+        position: relative;
+        bottom: 240px;
+    }
+
+    .banner-title {
+        position: relative;
+        z-index: 1;
+        justify-content: center;
+        align-content: center;
+        margin: auto;
+    }
+
+    .banner-title h1 {
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        align-self: center;
+    }
+
+    .service-01,
+    .service-03 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+    }
+
+    .service-02,
+    .service-04 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+    }
+
+    .service-photo01 img,
+    .service-photo02 img,
+    .service-photo03 img,
+    .service-photo04 img {
+        display: flex;
+    }
+
+    .service-photo01,
+    .service-photo02,
+    .service-photo03,
+    .service-photo04 {
+        display: flex;
+        height: 375px;
+        width: 218px;
+        overflow: hidden;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .sponsors {
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .sponsors-container {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .sponsors-logo {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sponsors-logo img {
+        width: 100%;
+        margin: 20px auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* sponsors logos separate sizes */
+
+    .sa-logo {
+        width: 435px;
+        height: auto;
+    }
+
+    .ac-logo {
+        width: 202px;
+        height: auto;
+    }
+
+    .pcl-logo {
+        width: 220px;
+        height: auto;
+    }
+
+    .cibc-logo {
+        width: 152px;
+        height: auto;
+    }
+
+    /* contact tablet*/
+
+    .contact-image {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        padding: 40px 0px;
+    }
+
+    .submit {
+        width: 20%;
+        margin: auto 0px;
+    }
+
+    .submit a {
+        font-weight: bold;
+    }
+
+
+
+
+
+
+
+
 }
+
 
 
 
@@ -480,6 +641,4 @@ picture img {
 
 /* breakpoint - desktop */
 
-@media (min-width: 1024px) {
-
-}
+@media (min-width: 1024px) {}
