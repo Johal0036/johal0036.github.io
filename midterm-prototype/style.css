@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    background-color: #3C3B3A;
+    background-color: #3C3B3;
     display: flex;
     flex-direction: column;
 }
@@ -82,6 +82,14 @@ body {
     height: auto;
 }
 
+.graduation-photo {
+    display: inline-block;
+}
+
+.graduation-desktop {
+    display:none;
+}
+
 .content-container-02 {
     width: 80%;
     margin: auto;
@@ -132,7 +140,10 @@ body {
 .girl-photo {
     width: 100%;
     margin: auto;
+}
 
+.entertainment-photo {
+    display: none;
 }
 
 .girl-photo img {
@@ -639,7 +650,117 @@ picture img {
 /* breakpoint - desktop */
 
 @media (min-width: 1024px) {
+
+    .content-container-01 {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    .intro-btn {
+        display: flex;
+        align-self: flex-start;
+        margin: auto;
+    }
+
+    .intro-btn a {
+        font-weight: bold;
+        text-align: center;
+        margin: auto;
+    }
+
+    .content-container-02 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100%;
+        gap: 20px;
+    }
+
+    .graduation-photo {
+        display: none;
+    }
+
+    .graduation-desktop,
+    .entertainment-desktop {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .graduation-desktop img,
+    .entertainment-desktop img {
+        max-width: 813px;
+        max-height: 337px;
+    }
+
+    .content-container-02 .column02{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-btn {
+        width: 40%;
+        height: 45px;
+        text-align: center;
+        align-self: flex-end;
+    }
+
+    .president-msg {
+        display: flex;
+        width: 100%;
+        margin: auto;
+
+    }
+
+    .president-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+       align-self: center;
+    }
     
+    .president-name {
+        display: inline-block;
+    }
+    .backup-name {
+        display: none;
+    }
+    .president-photo {
+        padding: 0px 0px;
+        justify-content: center;
+    }
+.president-photo img {
+    width: 40%;
+} 
+
+#container-three {
+    width: 100%;
+    margin: auto;
+}
+
+.content-container-03 {
+    width: 80%;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+}
+
+.girl-photo {
+    display: none;
+}
+
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 0px;
+    right: 15px;
+    background-color: #3c3b3a;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
 
 
 }
