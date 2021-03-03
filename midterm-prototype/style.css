@@ -616,29 +616,30 @@ picture img {
         padding: 40px 0px;
     }
 
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
     .submit {
         width: 20%;
         margin: auto 0px;
+        display: flex;
+        align-self: flex-end;
     }
 
     .submit a {
         font-weight: bold;
+        text-align: center;
+        margin: auto;
     }
-
-
-
-
-
-
-
 
 }
 
-
-
-
-
-
 /* breakpoint - desktop */
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    
+
+
+}
