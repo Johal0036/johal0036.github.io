@@ -13,7 +13,7 @@ body {
 }
 
 .header {
-    background-color: #3C3B3;
+    background-color: #3C3B3A;
     display: flex;
     flex-direction: column;
 }
@@ -35,6 +35,8 @@ body {
 }
 
 .navigation a {
+    color: white;
+    text-decoration: none;
     align-items: center;
 }
 
@@ -760,7 +762,21 @@ picture img {
     padding: 5px;
 }
 
+/* Contact page form */
 
+.content-container-03 {
+    width: 80%;
+    margin: auto;
+}
+
+.content-container-03 .column02 {
+    width: 70%;
+}
+
+.contact-form {
+    max-width: 628px;
+    height: auto;
+}
 
 
 }
