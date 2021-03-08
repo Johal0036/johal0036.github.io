@@ -511,11 +511,12 @@ picture img {
         height: 200px;
         width: 100%;
         overflow: hidden;
+        text-align: center;
     }
 
     .banner-photo img {
         position: relative;
-        bottom: 240px;
+        bottom: 240px; 
     }
 
     .banner-title {
@@ -762,11 +763,48 @@ picture img {
     padding: 5px;
 }
 
+/* About page */
+
+.construction-vector img {
+    max-width: 820px;
+    height: auto;
+}
+
+.banner-photo img {
+    position: relative;
+    bottom: 400px;
+}
+
+#about-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 500px;
+    align-content: center;
+}
+
+.service-01 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    align-content: center;
+} 
+
+.service-photo01 {
+    background-image: url(images/bar-813_x_337.jpg);
+}
+.service-photo01 img {
+    display: none;
+}
+
+
+
 /* Contact page form */
 
 .content-container-03 {
     width: 80%;
     margin: auto;
+    margin-top: 80px;
 }
 
 .content-container-03 .column02 {
