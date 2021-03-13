@@ -4,6 +4,8 @@
 
 html {
     font-family: 'Raleway', sans-serif;
+    /* for the "to the top" button */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -56,6 +58,8 @@ body {
     grid-template-columns: 1fr 1fr;
     /* 50% 50% */
     grid-template-rows: 1fr 1fr;
+    text-align: center;
+    padding: 10px 0px;
 }
 
 .icons img {
@@ -69,14 +73,47 @@ body {
     text-align: center;
 }
 
+.btn {
+    margin: 50px auto;
+}
+
 .btn a {
     color: white;
     text-decoration: none;
 }
 
+.girl-books {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px 10px 0px;
+}
+
 .girl-books img {
     width: 300px;
     height: auto;
+}
+
+/* Fonts */
+.heading-01 h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.paragraph-01 p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.icons p {
+    color: #26A682;
+    font-weight: 500;
+}
+
+.section-sub h3 {
+    color: #26A682;
+    font-weight: 700;
 }
 
 .graduation-photo img {
@@ -97,19 +134,23 @@ body {
     margin: auto;
 }
 
-.section-btn,
-.btn {
+.section-btn{
     background-color: #26A682;
     padding: 10px 20px;
     border-radius: 10px;
     text-align: center;
+    width: 40%;
+    margin-right: 0px;
 }
 
 .president-msg {
     background-color: #3C3B3A;
     width: 100%;
+    height: 400px;
     margin: auto;
     color: #fff;
+    display: flex;
+    justify-content: center;
 }
 
 .president-content {
@@ -144,7 +185,7 @@ body {
     margin: auto;
 }
 
-.entertainment-photo {
+.entertainment-desktop {
     display: none;
 }
 
@@ -162,6 +203,14 @@ footer {
     color: white;
     display: flex;
     flex-direction: row-reverse;
+    
+}
+
+.footer-wrapper {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-socialmedia {
@@ -171,7 +220,6 @@ footer {
 
 .footer-socialmedia img {
     padding: 15px;
-    s
 }
 
 .footer-text p {
@@ -183,7 +231,9 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: flex-end;
+    width: 40%;
+    bottom: 40px;
+    right: 16px;
 }
 
 /* styles for the about page */
@@ -386,17 +436,28 @@ picture img {
 
     /* HOME TABLET */
 
+    .heading-01 h1 {
+        font-size: 4.4rem;
+        font-weight: bolder;
+    }
+
+    .paragraph-01 p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+
     .icons {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         /* 25% 25% 25% 25% */
         height: 130px;
+        text-align: center;
     }
 
     .intro-btn {
         background-color: #26A682;
         padding: 10px;
-        width: 50%;
+        width: 35%;
         border-radius: 10px;
         text-align: center;
         margin: auto;
@@ -478,12 +539,11 @@ picture img {
         height: 40px;
         width: 20%;
         padding: 10px 15px;
-        margin: 10px 0 0 auto;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 20px;
-
+        margin-bottom: 30px;
     }
 
     .section-btn a {
@@ -654,6 +714,22 @@ picture img {
 
 @media (min-width: 1024px) {
 
+    .heading-01 h1 {
+        font-size: 4.6rem;
+        font-weight: bolder;
+    }
+
+    .paragraph-01 p {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+
+    .girl-books img {
+        width: 450px;
+        align-self: center;
+    }
+
     .content-container-01 {
         display: grid;
         grid-template-columns: 40% 60%;
@@ -752,16 +828,14 @@ picture img {
     display: none;
 }
 
-
-
-.back-to-top {
+/* .back-to-top {
     position: fixed;
     bottom: 0px;
     right: 15px;
     background-color: #3c3b3a;
     border-radius: 10px;
     padding: 5px;
-}
+} */
 
 /* About page */
 
