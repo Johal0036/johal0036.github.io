@@ -11,65 +11,97 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Accessibility</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Learn More</a>
-              </li>
-          </ul>
-          
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">            <span class="navbar-toggler-icon"></span>
+              </button>
+
+        <div id="myNav" class="collapse navbar-collapse">
+            <div class="navbar-nav ml-auto text-center">
+                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#accessibility">Accessibility</a>
+                <a class="nav-link" href="#learn">Learn More</a>
+            </div>
         </div>
-      </nav>
+        </div>
+        
+    </nav>
     <div class="container-fluid">
-        <div>
+        <div id="home" class="bg-primary text-white text-center p-3">
             <h1 class="display-3">About Bootstrap</h1>
             <p>Bootstrap was created at Twitter in mid-2010. Prior to being an open-sourced framework, Bootstrap was known as Twitter Blueprint.</p>
         </div>
-        <div>
-            <h2 class="display-4">Highlights of the framework</h2>
+        <div class="bg-secondary text-white p-3">
+            <h2 class="display-4 text-center">Highlights of the framework</h2>
             <ol>
                 <li>Responsive</li>
                 <li>Easy to use</li>
                 <li>Engaged community of developers</li>
             </ol>
         </div>
-        <div>
-            <h1 class="display-3">Buttons and elements</h1>
-            <div>This is a button</div>
-            <div>This is other button</div>
-            <div>This is another button</div>
+        <div class="container">
+            <h1 class="display-3 text-center">Buttons and elements</h1>
+            <div class="row row-cols-lg-3 text-center justify-content-center">
+            <button type="button" class="btn btn-success col-lg-3 mb-4 mr-5 p-5 col-xs-4 col-sm-12">This is a button</buttion>
+            <button type="button" class="btn btn-info col-lg-3 mb-4 mr-5 p-5 col-xs-4 col-sm-12">This is other button</button>
+            <button type="button" class="btn btn-warning col-lg-3 mb-4 mr-5 p-5 col-xs-4 col-sm-12">This is another button</button> 
+            </div>
+            
         </div>
-        <div>
+
+        <h1 class="display-3">Totally Responsiveness</h1>
+        <div class="row mb-4 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+            <div class="col bg-primary p-3 text-white border border-secondary">Test me by resizing your browser</div>
+            <div class="col bg-secondary p-3 text-white border border-secondary">Test me by resizing your browser</div>
+            <div class="col bg-primary p-3 text-white border border-secondary">Test me by resizing your browser</div>
+            <div class="col bg-secondary p-3 text-white border border-secondary">Test me by resizing your browser</div>
+            <div class="col bg-primary p-3 text-white border border-secondary">Test me by resizing your browser</div>
+            <div class="col bg-secondary p-3 text-white border border-secondary">Test me by resizing your browser</div>
+            <div class="col bg-primary p-3 text-white border border-secondary">Test me by resizing your browser</div>
+            <div class="col bg-secondary p-3 text-white border border-secondary">Test me by resizing your browser</div>
+        </div>
+
+        <div id="accessibility">
             <h1 class="display-3">Accessibility</h1>
             <p>A brief overview of Bootstrap’s features and limitations for the creation of accessible content.</p>
             <p>Bootstrap provides an easy-to-use framework of ready-made styles, layout tools, and interactive
-                components, allowing developers to create websites and applications that are visually appealing, functionally rich, and accessible out of the box.</p>
+                components, allowing developers to create websites and applications that are visually appealing,
+                functionally rich, and accessible out of the box.</p>
         </div>
+        <figure class="mx-auto text-center">
+            <img class="img-fluid rounded justify-content-center" src="https://images.pexels.com/photos/3184455/pexels-photo-3184455.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=360&w=auto" alt="designer using computer" />
+        <figcaption class="figure-caption text-center">Designers should always keep their users in mind.</figcaption>
+        </figure>
+        
+
         <div>
             <h2 class="display-4">Structural markup</h2>
-            <p>Bootstrap’s styling and layout can be applied to a wide range of markup structures. This documentation aims to provide developers with best practice examples to demonstrate the use of Bootstrap itself and illustrate appropriate semantic markup, including ways in which potential accessibility concerns can be addressed.</p>
+            <p>Bootstrap’s styling and layout can be applied to a wide range of markup structures. This documentation
+                aims to provide developers with best practice examples to demonstrate the use of Bootstrap itself and
+                illustrate appropriate semantic markup, including ways in which potential accessibility concerns can be
+                addressed.</p>
         </div>
         <div>
             <h2 class="display-4">Color contrast</h2>
-            <p>Most colors that currently make up Bootstrap’s default palette—used throughout the framework for things such as button variations, alert variations, form validation indicators—lead to insufficient color contrast when used against a light background. Authors will need to manually modify/extend these default colors to ensure adequate color contrast ratios.</p>
+            <p>Most colors that currently make up Bootstrap’s default palette—used throughout the framework for things
+                such as button variations, alert variations, form validation indicators—lead to insufficient color
+                contrast when used against a light background. Authors will need to manually modify/extend these default
+                colors to ensure adequate color contrast ratios.</p>
         </div>
-        <div>
-            <h2 class="display-4">To learn more about the framework:</h2>
-            <a href="https://getbootstrap.com">https://getbootstrap.com/</a>
+        <div id="learn" class="bg-info container-fluid jumbotron">
+            <h2 class="display-4 text-white">To learn more about the framework:</h2>
+            <a href="https://getbootstrap.com"><strong>
+                <p class="p-2 display-5 text-white text-decoration-underline" >Click here to learn more about Bootstrap framework</p></strong></a>
         </div>
     </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 
 </body>
 
