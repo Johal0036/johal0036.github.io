@@ -1,0 +1,13 @@
+body {
+    background-color: #fff;
+}
+
+.top-container, footer {
+    background-color: #0082FA;
+}
+
+picture {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
