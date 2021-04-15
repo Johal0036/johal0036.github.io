@@ -1,13 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body {
     background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    margin: auto;
 }
 
-.top-container, footer {
+section {
+    width: 100%;
+    margin: auto;
+}
+
+.home-container {
+    width: 90%;
+    margin: auto;
+}
+
+.top-container,
+footer {
     background-color: #0082FA;
 }
 
-picture {
-    display: block;
-    max-width: 100%;
-    height: auto;
+.menu-top,
+.menu-footer {
+    color: #ffffff;
+}
+
+.logo {
+    width: 25%;
+    margin: auto;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+}
+
+.menu-top li {
+    padding: 10px;
+}
+
+/* to remove the bullet points */
+ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.menu-footer {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.boxes {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+/** BUTTONS **/
+.button {
+    background-color: #0082FA;
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+}
+
+.button:hover {
+    background-color: #61d8ff;
+    color: #000000;
+}
+
+.button a {
+    text-decoration: none;
+    color: #ffffff;
 }
