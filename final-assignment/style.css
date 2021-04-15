@@ -38,11 +38,12 @@ footer {
     justify-content: center;
 }
 
-.menu-top {
+.menu-top,
+.menu-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align:center;
+    text-align: center;
 }
 
 .menu-top li {
@@ -60,15 +61,66 @@ nav a {
     cursor: pointer;
 }
 
-.menu-footer {
-    display: flex;
-    flex-flow: row nowrap;
+img {
+    margin: auto;
+    width: 100%;
 }
+
+.home-container h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/** FOOTER **/
+
+.contact-info p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+
+.social-media img {
+    width: 20px;
+    height: 20px;
+}
+
 
 .boxes {
     width: 90%;
     margin: auto;
     padding-bottom: 80px;
+}
+
+.image-work,
+.image-accessibility,
+.image-specialized {
+    width: 100%;
+    height: 105px;
+    margin: 15px auto;
+    background-color: gray;
+    overflow: hidden;
+}
+
+.image-work img {
+    width: 100%;
+    height: auto;
+}
+
+.image-accessibility img {
+    width: 100%;
+    height: auto;
+    bottom: 200px;
+}
+
+.image-specialized img {
+    width: 100%;
+    height: auto;
 }
 
 /** BUTTONS **/
@@ -83,10 +135,31 @@ nav a {
 
 .button:hover {
     background-color: #61d8ff;
+}
+
+.button:hover a {
     color: #000000;
+    font-weight: 600;
 }
 
 .button a {
     text-decoration: none;
     color: #ffffff;
 }
+
+/*** RESPONSIVE LAYOUT - TABLET ***/
+
+@media (min-width:768px) {
+
+    .menu-top,
+    .menu-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+/*** RESPONSIVE LAYOUT - DESKTOP ***/
+
+@media (min-width:1024px) {}
