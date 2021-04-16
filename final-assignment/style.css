@@ -95,9 +95,9 @@ img {
 }
 
 .boxes {
-    width: 90%;
+    width: 100%;
     margin: auto;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
 }
 
 .image-work,
@@ -110,20 +110,22 @@ img {
     overflow: hidden;
 }
 
-.image-work img {
-    width: 100%;
-    height: auto;
+.image-work {
+    background-image: url(images/work_mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.image-accessibility img {
-    width: 100%;
-    height: auto;
-    bottom: 200px;
+.image-accessibility {
+    background-image: url(images/accessibility_mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.image-specialized img {
-    width: 100%;
-    height: auto;
+.image-specialized {
+    background-image: url(images/content_mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /** BUTTONS **/
@@ -150,6 +152,12 @@ img {
     color: #ffffff;
 }
 
+/* Page content for Accessibility */
+
+.page-text h1 {
+    text-align: left;
+}
+
 /*** RESPONSIVE LAYOUT - TABLET ***/
 
 @media (min-width: 500px) {
@@ -170,16 +178,105 @@ img {
         flex-direction: row;
         justify-content: space-around;
     }
-        
-        .logo {
-            width: 133px;
-            height: 65px;
-            align-self: center;
-margin: 0px 0px;
-        }
+
+    .logo {
+        width: 133px;
+        height: 65px;
+        align-self: center;
+        margin: 0px 0px;
+    }
+
+    .image-work,
+    .image-accessibility,
+    .image-specialized {
+        width: 100%;
+        height: 225px;
+        margin: 15px auto;
+        background-color: gray;
+        overflow: hidden;
+    }
+
+    .image-work {
+        background-image: url(images/work_tablet.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .image-accessibility {
+        background-image: url(images/accessibility_tablet.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .image-specialized {
+        background-image: url(images/content_tablet.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 
 /*** RESPONSIVE LAYOUT - DESKTOP ***/
 
-@media (min-width:1024px) {}
+@media (min-width:1024px) {
+.menu-top nav {
+    justify-content: end;
+}
+.home-container h1 {
+    font-size: 4rem;
+}
+.front-page {
+display: grid;
+grid-template-columns: 50% 50%;
+gap: 20px;
+}
+
+.greetings p{
+    font-size: 1.6rem;
+    align-self: center;
+    margin: 0px 0px;
+}
+
+.boxes {
+    width: 70%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+    .image-work,
+    .image-accessibility,
+    .image-specialized {
+        width: 346px;
+        height: 346px;
+        margin: 15px auto;
+        background-color: gray;
+        overflow: hidden;
+    }
+
+    .image-work {
+        background-image: url(images/work_desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .image-accessibility {
+        background-image: url(images/accessibility_desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .image-specialized {
+        background-image: url(images/content_desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .page-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+}
