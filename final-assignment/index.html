@@ -14,10 +14,10 @@
         <img class="logo" src="images/ssj-logo.png" alt="My logo">
         <nav class="menu-top">
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ACCESSIBILITY</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="accessibility.html">ACCESSIBILITY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
     </div>
     </nav>
@@ -26,7 +26,17 @@
             <h1>Sajandeep Johal</h1>
             <div class="front-page">
                 <div class="workstation">
-                    <img src="images/photo_300_x_430.jpg" alt="my workstation">
+                    <picture>
+                        <source srcset="images/workstation_320_x_237.jpg 320w,
+                        images/workstation_480_x_355.jpg 480w,
+                        images/workstation_640_x_473.jpg 640w,
+                        images/workstation_960_x_709.jpg 960px" media="(max-width:960px)">
+
+                        <source srcset="images/workstation_1280_x_945.jpg 1280w,
+                        images/workstation_1440_x_1063.jpg 1440w" media="(min-width: 960px)">
+
+                        <img src="images/workstation_1280_x_945.jpg" alt="workstation and devices" />
+                    </picture>
                 </div>
                 <div class="greetings">
                     <p>Hello, everyone!
@@ -75,10 +85,10 @@
     <footer>
         <nav class="menu-footer">
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ACCESSIBILITY</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="accessibility.html">ACCESSIBILITY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
         <div class="contact-info">
