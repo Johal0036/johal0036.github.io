@@ -13,8 +13,9 @@ section {
 }
 
 .home-container {
-    width: 90%;
+    width: 80%;
     margin: auto;
+    justify-content: center;
 }
 
 .top-container,
@@ -53,6 +54,7 @@ footer {
 /* to remove the bullet points */
 ul {
     list-style-type: none;
+
 }
 
 nav a {
@@ -157,6 +159,13 @@ img {
 .page-text h1 {
     text-align: left;
 }
+
+/* to remove the padding on the list objects */
+.page-text ul {
+    padding: 0px 0px;
+}
+
+
 
 /*** RESPONSIVE LAYOUT - TABLET ***/
 
@@ -277,6 +286,21 @@ gap: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 25px;
+    }
+
+    .profile-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+
+    }
+
+    .page-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .work-content {
+        margin-bottom: 50px;
     }
 
 }
