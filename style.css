@@ -326,6 +326,10 @@ input.message-box {
 
     }
 
+    .profile-photo {
+        display: inline-block;
+    }
+
     .page-text h1 {
         font-size: 2.8rem;
     }
