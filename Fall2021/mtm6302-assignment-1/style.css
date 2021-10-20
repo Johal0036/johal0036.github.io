@@ -1,0 +1,58 @@
+body {
+    background-color: gray;
+}
+
+#gallery {
+    width: 100%;
+    margin: auto;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+
+.emojis {
+    display: grid;
+    justify-content: center;
+    margin: 20px;
+  
+    font-size: 4rem;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 100px;
+
+
+}
+
+/* this is the smaller vew*/
+
+@media (max-width: 700px) {
+
+    #gallery {
+margin: auto;
+width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        padding-top: 100px;
+    
+    }
+
+    .emojis {
+        display: grid;
+        justify-content: center;
+  
+        margin: 15px;
+      
+        font-size: 3rem;
+        background-color: #fff;
+
+        border-radius: 10px;
+        width: 80px;
+        height: 80px;
+    }
+}
